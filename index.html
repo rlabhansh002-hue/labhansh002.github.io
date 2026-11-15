@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Labhansh Rathore - Developer & Tech Enthusiast</title>
+    <meta name="title" content="Labhansh Rathore - Developer & Tech Enthusiast">
+    <meta name="description" content="Official portfolio of Labhansh Rathore — Aspiring Software Engineer, AI & Cybersecurity Enthusiast, and Student Developer from Chhattisgarh, India. Explore projects in Python, JavaScript, and automation.">
+    <meta name="keywords" content="Labhansh Rathore, Labhansh Rathore Developer, Labhansh Rathore Portfolio, Software Engineer Chhattisgarh, Python Developer, Student Developer India, AI Enthusiast, Cybersecurity">
+    <meta name="author" content="Labhansh Rathore">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook / LinkedIn SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Labhansh Rathore - Developer & Tech Enthusiast">
+    <meta property="og:description" content="Aspiring Software Engineer, AI & Cybersecurity Enthusiast, and Student Developer from Chhattisgarh, India.">
+    <meta property="og:site_name" content="Labhansh Rathore Portfolio">
+
+    <!-- Twitter Card SEO -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Labhansh Rathore - Developer & Tech Enthusiast">
+    <meta property="twitter:description" content="Aspiring Software Engineer, AI & Cybersecurity Enthusiast, and Student Developer from Chhattisgarh, India.">
+
+    <!-- Structured Data (JSON-LD) for Google Knowledge Graph & Rich Results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Labhansh Rathore",
+      "jobTitle": "Aspiring Software Engineer & Student Developer",
+      "email": "mailto:rlabhansh002@gmail.com",
+      "telephone": "+91-9109831950",
+      "description": "Self-taught developer passionate about Python, Artificial Intelligence, Cybersecurity, and Web Technologies.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Chhattisgarh",
+        "addressCountry": "India"
+      },
+      "knowsAbout": ["Python", "JavaScript", "HTML", "CSS", "Artificial Intelligence", "Cybersecurity", "Desktop Automation"],
+      "sameAs": [
+        "https://instagram.com/labhansh_002",
+        "https://github.com/",
+        "https://linkedin.com/"
+      ]
+    }
+    </script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        darkBg: '#090d16',
+                        cardBg: '#111827',
+                        accentCyan: '#06b6d4',
+                        accentIndigo: '#6366f1',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #090d16;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        /* Subtle Ambient Background Grid */
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        }
+
+        /* Glassmorphism Cards */
+        .glass-card {
+            background: rgba(17, 24, 39, 0.65);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(6, 182, 212, 0.4);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px -10px rgba(6, 182, 212, 0.15);
+        }
+
+        /* Gradient Text */
+        .text-gradient {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #090d16;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #334155;
+        }
+    </style>
+</head>
+<body class="bg-grid font-sans antialiased selection:bg-cyan-500/30 selection:text-cyan-200">
+
+    <!-- Ambient Glow Orbs -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="fixed bottom-0 right-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-40 bg-[#090d16]/80 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Brand / Logo -->
+                <a href="#" class="flex items-center space-x-2 group">
+                    <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-cyan-500 to-indigo-600 flex items-center justify-center font-mono font-bold text-white shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+                        LR
+                    </div>
+                    <span class="font-bold text-lg tracking-tight text-white">Labhansh<span class="text-cyan-400">.</span></span>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                    <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                    <a href="#skills" class="hover:text-cyan-400 transition-colors">Skills</a>
+                    <a href="#projects" class="hover:text-cyan-400 transition-colors">Projects</a>
+                    <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+                </nav>
+
+                <!-- Action Buttons -->
+                <div class="flex items-center space-x-3">
+                    <!-- Quick Deploy / Download Button for Labhansh -->
+                    <button onclick="openDeployModal()" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-medium bg-cyan-500/10 text-cyan-300 border border-cyan-500/30 hover:bg-cyan-500/20 transition-all cursor-pointer" title="Download & Host on Google">
+                        <i class="fa-solid fa-rocket"></i>
+                        <span class="hidden sm:inline">Publish to Google</span>
+                    </button>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button id="mobileMenuBtn" class="md:hidden p-2 rounded-xl text-slate-300 hover:bg-white/5 focus:outline-none">
+                        <i class="fa-solid fa-bars text-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Navigation -->
+        <div id="mobileMenu" class="hidden md:hidden bg-[#0d1322] border-b border-white/10 px-4 pt-2 pb-4 space-y-2">
+            <a href="#about" class="block px-3 py-2 rounded-lg text-slate-300 hover:bg-white/5 hover:text-cyan-400">About</a>
+            <a href="#skills" class="block px-3 py-2 rounded-lg text-slate-300 hover:bg-white/5 hover:text-cyan-400">Skills</a>
+            <a href="#projects" class="block px-3 py-2 rounded-lg text-slate-300 hover:bg-white/5 hover:text-cyan-400">Projects</a>
+            <a href="#contact" class="block px-3 py-2 rounded-lg text-slate-300 hover:bg-white/5 hover:text-cyan-400">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-16">
+
+        <!-- 1. HERO SECTION -->
+        <section id="hero" class="min-h-[88vh] flex items-center py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+            <div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-8 space-y-6">
+                    <!-- Status Badge -->
+                    <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/70 text-xs font-mono text-cyan-400">
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+                        </span>
+                        Based in Chhattisgarh, India • Open to Collaborate
+                    </div>
+
+                    <!-- Primary Heading (H1 for SEO) -->
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight">
+                        Hi, I'm <br class="sm:hidden">
+                        <span class="text-gradient">Labhansh Rathore</span>
+                    </h1>
+
+                    <!-- Tagline -->
+                    <p class="text-lg sm:text-xl font-medium text-slate-300 font-mono">
+                        Aspiring Software Engineer <span class="text-cyan-400">|</span> AI & Cybersecurity Enthusiast <span class="text-cyan-400">|</span> Student Developer
+                    </p>
+
+                    <!-- Brief Intro -->
+                    <p class="text-slate-400 text-base sm:text-lg max-w-2xl leading-relaxed">
+                        Building intelligent automation tools, exploring artificial intelligence, and learning how to secure the digital world—one line of code at a time.
+                    </p>
+
+                    <!-- Call-To-Action Buttons -->
+                    <div class="flex flex-wrap items-center gap-4 pt-2">
+                        <a href="#projects" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-white font-semibold shadow-lg shadow-cyan-500/25 transition-all flex items-center gap-2">
+                            <span>Explore My Work</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </a>
+                        <a href="tel:+919109831950" class="px-6 py-3.5 rounded-xl bg-slate-800/80 hover:bg-slate-800 border border-slate-700 text-slate-200 font-semibold transition-all flex items-center gap-2">
+                            <i class="fa-solid fa-phone text-emerald-400"></i>
+                            <span>+91 9109831950</span>
+                        </a>
+                        <a href="#contact" class="px-6 py-3.5 rounded-xl bg-slate-800/80 hover:bg-slate-800 border border-slate-700 text-slate-200 font-semibold transition-all flex items-center gap-2">
+                            <i class="fa-regular fa-paper-plane text-cyan-400"></i>
+                            <span>Get In Touch</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Side Terminal / Code Card Visual -->
+                <div class="lg:col-span-4">
+                    <div class="glass-card rounded-2xl p-5 font-mono text-xs sm:text-sm shadow-2xl border border-slate-800">
+                        <div class="flex items-center justify-between pb-3 mb-3 border-b border-slate-800">
+                            <div class="flex space-x-2">
+                                <span class="w-3 h-3 rounded-full bg-rose-500/80"></span>
+                                <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
+                                <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
+                            </div>
+                            <span class="text-slate-500 text-xs">labhansh_profile.py</span>
+                        </div>
+                        <div class="space-y-2 text-slate-300 leading-relaxed overflow-x-auto">
+                            <p><span class="text-indigo-400">class</span> <span class="text-cyan-300">Developer</span>:</p>
+                            <p class="pl-4"><span class="text-indigo-400">def</span> <span class="text-amber-300">__init__</span>(self):</p>
+                            <p class="pl-8">self.name = <span class="text-emerald-400">"Labhansh Rathore"</span></p>
+                            <p class="pl-8">self.location = <span class="text-emerald-400">"Chhattisgarh, IN"</span></p>
+                            <p class="pl-8">self.stack = [</p>
+                            <p class="pl-12 text-emerald-400">"Python", "JavaScript",</p>
+                            <p class="pl-12 text-emerald-400">"HTML/CSS", "AI & Sec"</p>
+                            <p class="pl-8">]</p>
+                            <p class="pl-4"><span class="text-indigo-400">def</span> <span class="text-amber-300">mission</span>(self):</p>
+                            <p class="pl-8"><span class="text-indigo-400">return</span> <span class="text-emerald-400">"Code. Automate. Secure."</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. ABOUT ME SECTION -->
+        <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto border-t border-white/5">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                <div class="lg:col-span-5 space-y-4">
+                    <span class="text-cyan-400 font-mono text-sm tracking-wider uppercase">// 01. About Me</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">Curiosity Driven. <br>Self-Taught Builder.</h2>
+                    <div class="h-1 w-16 bg-gradient-to-r from-cyan-500 to-indigo-600 rounded-full"></div>
+                    
+                    <!-- Quick Highlights -->
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="glass-card p-4 rounded-2xl">
+                            <div class="text-2xl font-bold text-cyan-400 font-mono">AI & Sec</div>
+                            <div class="text-xs text-slate-400 mt-1">Core Focus Areas</div>
+                        </div>
+                        <div class="glass-card p-4 rounded-2xl">
+                            <div class="text-2xl font-bold text-indigo-400 font-mono">Python</div>
+                            <div class="text-xs text-slate-400 mt-1">Primary Language</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 glass-card rounded-3xl p-6 sm:p-8 space-y-5 text-slate-300 leading-relaxed text-base sm:text-lg">
+                    <p>
+                        Hello! I'm <strong class="text-white font-semibold">Labhansh Rathore</strong>, a passionate student developer and technology enthusiast from <strong class="text-white font-semibold">Chhattisgarh, India</strong>. My journey into programming began with a simple curiosity about how software automates everyday tasks and powers intelligent systems.
+                    </p>
+                    <p>
+                        As a self-taught coder, I have built a strong foundation in <span class="text-cyan-300 font-medium">Python</span>, <span class="text-cyan-300 font-medium">JavaScript</span>, and <span class="text-cyan-300 font-medium">HTML/CSS</span>. Whether it's scripting desktop voice assistants or crafting clean web interfaces, I love turning ideas into working code.
+                    </p>
+                    <p>
+                        Looking ahead, my goal is to pursue <strong class="text-white font-semibold">Software Engineering</strong> with a deep focus on <strong class="text-white font-semibold">Artificial Intelligence</strong> and <strong class="text-white font-semibold">Cybersecurity</strong>—building smart applications that are not just efficient, but resilient and secure by design.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. SKILLS & TECH STACK SECTION -->
+        <section id="skills" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto border-t border-white/5">
+            <div class="text-center max-w-2xl mx-auto mb-14 space-y-3">
+                <span class="text-cyan-400 font-mono text-sm tracking-wider uppercase">// 02. Technical Arsenal</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white">Skills & Technologies</h2>
+                <p class="text-slate-400 text-sm sm:text-base">
+                    Tools, languages, and domains I actively work with and explore.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Skill 1: Python -->
+                <div class="glass-card rounded-2xl p-6 flex items-start space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 text-2xl shrink-0">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-white">Python</h3>
+                        <p class="text-sm text-slate-400 mt-1">Scripting, desktop automation, speech recognition, and backend logic.</p>
+                        <span class="inline-block mt-3 text-xs font-mono px-2.5 py-1 rounded-md bg-amber-500/10 text-amber-300">Core Language</span>
+                    </div>
+                </div>
+
+                <!-- Skill 2: JavaScript -->
+                <div class="glass-card rounded-2xl p-6 flex items-start space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-yellow-400/10 border border-yellow-400/20 flex items-center justify-center text-yellow-300 text-2xl shrink-0">
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-white">JavaScript</h3>
+                        <p class="text-sm text-slate-400 mt-1">Interactive web applications, DOM manipulation, and modern ES6+ features.</p>
+                        <span class="inline-block mt-3 text-xs font-mono px-2.5 py-1 rounded-md bg-yellow-400/10 text-yellow-200">Web Logic</span>
+                    </div>
+                </div>
+
+                <!-- Skill 3: HTML & CSS -->
+                <div class="glass-card rounded-2xl p-6 flex items-start space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-2xl shrink-0">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-white">HTML5 & CSS3</h3>
+                        <p class="text-sm text-slate-400 mt-1">Semantic markup, responsive layouts, Tailwind CSS, and SEO-friendly structure.</p>
+                        <span class="inline-block mt-3 text-xs font-mono px-2.5 py-1 rounded-md bg-cyan-500/10 text-cyan-300">Frontend</span>
+                    </div>
+                </div>
+
+                <!-- Skill 4: Automation -->
+                <div class="glass-card rounded-2xl p-6 flex items-start space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 text-2xl shrink-0">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-white">Task Automation</h3>
+                        <p class="text-sm text-slate-400 mt-1">Voice-controlled workflows, OS automation, and productivity utilities.</p>
+                        <span class="inline-block mt-3 text-xs font-mono px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-300">Productivity</span>
+                    </div>
+                </div>
+
+                <!-- Skill 5: AI Basics -->
+                <div class="glass-card rounded-2xl p-6 flex items-start space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-2xl shrink-0">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-white">AI & ML Basics</h3>
+                        <p class="text-sm text-slate-400 mt-1">Exploring LLM APIs, natural language processing, and smart assistant architectures.</p>
+                        <span class="inline-block mt-3 text-xs font-mono px-2.5 py-1 rounded-md bg-purple-500/10 text-purple-300">Exploring</span>
+                    </div>
+                </div>
+
+                <!-- Skill 6: Cybersecurity -->
+                <div class="glass-card rounded-2xl p-6 flex items-start space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center text-rose-400 text-2xl shrink-0">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-white">Cybersecurity</h3>
+                        <p class="text-sm text-slate-400 mt-1">Learning network fundamentals, Linux basics, ethical hacking concepts, and web security.</p>
+                        <span class="inline-block mt-3 text-xs font-mono px-2.5 py-1 rounded-md bg-rose-500/10 text-rose-300">Learning Path</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. FEATURED PROJECTS SECTION -->
+        <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto border-t border-white/5">
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-14 gap-4">
+                <div class="space-y-3">
+                    <span class="text-cyan-400 font-mono text-sm tracking-wider uppercase">// 03. Portfolio</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">Featured Projects</h2>
+                </div>
+                <p class="text-slate-400 text-sm max-w-md">
+                    Hands-on projects built while learning and experimenting with code.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Featured Project 1: Jarvis Voice Assistant -->
+                <article class="glass-card rounded-3xl p-6 flex flex-col justify-between border-cyan-500/30 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 px-3 py-1 bg-cyan-500/20 text-cyan-300 text-xs font-mono rounded-bl-xl border-b border-l border-cyan-500/30">
+                        Featured
+                    </div>
+
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-xl mb-5">
+                            <i class="fa-solid fa-microphone-lines"></i>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors">
+                            Jarvis - Desktop Voice Assistant
+                        </h3>
+
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            A Python-powered voice-activated desktop assistant capable of executing system commands, searching the web, opening applications, and automating daily computer tasks hands-free.
+                        </p>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-white/5">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs font-mono px-2.5 py-1 rounded-lg bg-slate-800 text-cyan-300">Python</span>
+                            <span class="text-xs font-mono px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300">SpeechRecognition</span>
+                            <span class="text-xs font-mono px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300">Automation</span>
+                        </div>
+                        <div class="flex items-center justify-between text-sm">
+                            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-cyan-400 font-medium inline-flex items-center gap-1.5 transition-colors">
+                                <i class="fa-brands fa-github"></i> Source Code
+                            </a>
+                            <span class="text-xs text-emerald-400 font-mono">● Completed</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: Personal Developer Portfolio -->
+                <article class="glass-card rounded-3xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-xl mb-5">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-white">
+                            SEO-Optimized Developer Portfolio
+                        </h3>
+
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            A responsive, dark-themed personal web presence engineered with semantic HTML5, Tailwind CSS, and JSON-LD structured data for search engine visibility.
+                        </p>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-white/5">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs font-mono px-2.5 py-1 rounded-lg bg-slate-800 text-indigo-300">HTML5</span>
+                            <span class="text-xs font-mono px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300">Tailwind CSS</span>
+                            <span class="text-xs font-mono px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300">SEO / Schema</span>
+                        </div>
+                        <div class="flex items-center justify-between text-sm">
+                            <a href="#" class="text-slate-300 hover:text-cyan-400 font-medium inline-flex items-center gap-1.5 transition-colors">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Site
+                            </a>
+                            <span class="text-xs text-cyan-400 font-mono">● Active</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: Future Lab / Upcoming Project -->
+                <article class="glass-card rounded-3xl p-6 flex flex-col justify-between border-dashed border-slate-700/80">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-slate-800/80 border border-slate-700 flex items-center justify-center text-slate-400 text-xl mb-5">
+                            <i class="fa-solid fa-shield-virus"></i>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-slate-200">
+                            Security & AI Utility Lab
+                        </h3>
+
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            Currently building new tools focused on password strength auditing, network diagnostics, and AI-assisted study workflows in Python & JavaScript.
+                        </p>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-white/5">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs font-mono px-2.5 py-1 rounded-lg bg-slate-800/80 text-slate-400">Python</span>
+                            <span class="text-xs font-mono px-2.5 py-1 rounded-lg bg-slate-800/80 text-slate-400">Cybersecurity</span>
+                        </div>
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-slate-500 font-medium inline-flex items-center gap-1.5">
+                                <i class="fa-solid fa-code-branch"></i> Coming Soon
+                            </span>
+                            <span class="text-xs text-amber-400 font-mono">● In Progress</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+                        <!-- Copy Email & Phone Widgets -->
+                        <div class="space-y-3 max-w-md">
+                            <!-- Phone Number Widget -->
+                            <div class="flex items-center justify-between p-3.5 rounded-2xl bg-[#090d16] border border-slate-800">
+                                <a href="tel:+919109831950" class="flex items-center space-x-3 overflow-hidden group">
+                                    <i class="fa-solid fa-phone text-emerald-400 text-lg shrink-0"></i>
+                                    <span id="phoneText" class="text-sm font-mono text-slate-200 group-hover:text-emerald-300 transition-colors truncate">+91 9109831950</span>
+                                </a>
+                                <button onclick="copyText('phoneText', 'Phone number')" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-emerald-500/20 hover:text-emerald-300 text-xs font-medium text-slate-300 transition-colors shrink-0 ml-2 cursor-pointer">
+                                    <i class="fa-regular fa-copy mr-1"></i> Copy
+                                </button>
+                            </div>
+
+                            <!-- Email Widget -->
+                            <div class="flex items-center justify-between p-3.5 rounded-2xl bg-[#090d16] border border-slate-800">
+                                <a href="mailto:rlabhansh002@gmail.com" class="flex items-center space-x-3 overflow-hidden group">
+                                    <i class="fa-regular fa-envelope text-cyan-400 text-lg shrink-0"></i>
+                                    <span id="emailText" class="text-sm font-mono text-slate-200 group-hover:text-cyan-300 transition-colors truncate">rlabhansh002@gmail.com</span>
+                                </a>
+                                <button onclick="copyText('emailText', 'Email')" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-cyan-500/20 hover:text-cyan-300 text-xs font-medium text-slate-300 transition-colors shrink-0 ml-2 cursor-pointer">
+                                    <i class="fa-regular fa-copy mr-1"></i> Copy
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Social Profiles -->
+                        <div class="flex flex-wrap gap-3 pt-2">
+                            <a href="https://instagram.com/labhansh_002" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-slate-800/80 hover:bg-slate-800 border border-slate-700 text-slate-200 hover:text-pink-400 text-sm font-medium inline-flex items-center gap-2 transition-all">
+                                <i class="fa-brands fa-instagram text-lg text-pink-500"></i>
+                                <span>@labhansh_002</span>
+                            </a>
+                            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-slate-800/80 hover:bg-slate-800 border border-slate-700 text-slate-200 hover:text-white text-sm font-medium inline-flex items-center gap-2 transition-all">
+                                <i class="fa-brands fa-github text-lg"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-slate-800/80 hover:bg-slate-800 border border-slate-700 text-slate-200 hover:text-cyan-400 text-sm font-medium inline-flex items-center gap-2 transition-all">
+                                <i class="fa-brands fa-linkedin text-lg text-sky-400"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Quick Message Form -->
+                    <div class="lg:col-span-6">
+                        <form id="contactForm" onsubmit="handleContactSubmit(event)" class="space-y-4 bg-[#090d16]/70 p-6 rounded-2xl border border-slate-800/80">
+                            <div>
+                                <label for="senderName" class="block text-xs font-mono text-slate-400 mb-1.5">Your Name</label>
+                                <input type="text" id="senderName" required placeholder="Enter your name" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                            <div>
+                                <label for="senderEmail" class="block text-xs font-mono text-slate-400 mb-1.5">Your Email</label>
+                                <input type="email" id="senderEmail" required placeholder="you@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                            <div>
+                                <label for="senderMessage" class="block text-xs font-mono text-slate-400 mb-1.5">Message</label>
+                                <textarea id="senderMessage" rows="3" required placeholder="Hi Labhansh, I saw your portfolio..." class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white text-sm focus:outline-none focus:border-cyan-500 transition-colors resize-none"></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-white font-semibold text-sm shadow-lg shadow-cyan-500/20 transition-all cursor-pointer">
+                                Send Message <i class="fa-solid fa-paper-plane ml-1.5"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/5 py-8 px-4 sm:px-6 lg:px-8 text-center text-slate-500 text-sm">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© <span id="currentYear"></span> <strong class="text-slate-300 font-medium">Labhansh Rathore</strong>. All rights reserved.</p>
+            <p class="font-mono text-xs">Designed & Built in Chhattisgarh, India</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Banner (Replaces alert) -->
+    <div id="toastNotification" class="fixed bottom-5 right-5 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none">
+        <div class="bg-slate-900 border border-cyan-500/40 text-white px-5 py-3.5 rounded-2xl shadow-2xl flex items-center space-x-3">
+            <i class="fa-solid fa-circle-check text-cyan-400 text-lg"></i>
+            <span id="toastMessage" class="text-sm font-medium">Action completed!</span>
+        </div>
+    </div>
+
+    <!-- Deploy & Google Indexing Helper Modal for Labhansh -->
+    <div id="deployModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/75 backdrop-blur-sm">
+        <div class="bg-[#0f172a] border border-slate-700 rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl space-y-5 relative">
+            <button onclick="closeDeployModal()" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-slate-800 text-slate-400 hover:text-white flex items-center justify-center cursor-pointer">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-lg">
+                    <i class="fa-brands fa-google"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-white">Apni Site Google Par Kaise Laayein?</h3>
+                    <p class="text-xs text-slate-400">Free GitHub Pages Hosting Guide</p>
+                </div>
+            </div>
+
+            <ol class="space-y-3 text-sm text-slate-300 list-decimal list-inside bg-slate-900/80 p-4 rounded-2xl border border-slate-800">
+                <li>Neeche diye gaye button se <strong class="text-cyan-300">index.html</strong> file download karein.</li>
+                <li><strong class="text-white">GitHub.com</strong> par ek nayi public repository banayein jiska naam rakhein: <code class="text-amber-300 bg-slate-800 px-1.5 py-0.5 rounded">labhanshrathore.github.io</code></li>
+                <li>Us repository mein ye <code class="text-cyan-300">index.html</code> file upload karke commit karein.</li>
+                <li>Settings &rarr; Pages mein jaakar branch <strong class="text-white">main</strong> select karein. Aapki site live ho jayegi!</li>
+                <li>Apne GitHub, LinkedIn aur Email links ko code mein update karna na bhoolein.</li>
+            </ol>
+
+            <div class="flex flex-col sm:flex-row gap-3 pt-2">
+                <button onclick="downloadPortfolioHTML()" class="flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-white font-semibold text-sm flex items-center justify-center gap-2 cursor-pointer">
+                    <i class="fa-solid fa-download"></i> Download index.html
+                </button>
+                <button onclick="closeDeployModal()" class="py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium text-sm cursor-pointer">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Interactions -->
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Show custom toast notification
+        function showToast(message) {
+            const toast = document.getElementById('toastNotification');
+            const toastMsg = document.getElementById('toastMessage');
+            toastMsg.textContent = message;
+
+            toast.classList.remove('translate-y-24', 'opacity-0');
+            setTimeout(() => {
+                toast.classList.add('translate-y-24', 'opacity-0');
+            }, 3200);
+        }
+
+        // Copy Text (Email or Phone) using execCommand for iframe compatibility
+        function copyText(elementId, label) {
+            const text = document.getElementById(elementId).textContent;
+            const tempInput = document.createElement('input');
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            showToast(`${label} copied to clipboard!`);
+        }
+
+        // Handle Contact Form Submission
+        function handleContactSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('senderName').value.trim();
+            if (name) {
+                showToast(`Thanks ${name}! Your message has been received.`);
+                event.target.reset();
+            }
+        }
+
+        // Deploy Helper Modal Controls
+        const deployModal = document.getElementById('deployModal');
+
+        function openDeployModal() {
+            deployModal.classList.remove('hidden');
+            deployModal.classList.add('flex');
+        }
+
+        function closeDeployModal() {
+            deployModal.classList.add('hidden');
+            deployModal.classList.remove('flex');
+        }
+
+        // Download clean single-file HTML
+        function downloadPortfolioHTML() {
+            const htmlContent = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            const blob = new Blob([htmlContent], { type: 'text/html' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'index.html';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            showToast('index.html downloaded! Ready for GitHub Pages.');
+        }
+    </script>
+</body>
+</html>
